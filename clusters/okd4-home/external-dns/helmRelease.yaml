@@ -17,6 +17,8 @@ spec:
   install:
     createNamespace: true
   values:
+    containerSecurityContext:
+      enabled: false
     podSecurityContext:
       enabled: false
     provider: rfc2136
