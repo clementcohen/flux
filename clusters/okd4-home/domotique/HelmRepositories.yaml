@@ -6,4 +6,4 @@ metadata:
   namespace: domotique
 spec:
   interval: 1h
-  url: https://https://storage.googleapis.com/t3n-helm-charts
+  url: https://storage.googleapis.com/t3n-helm-charts
