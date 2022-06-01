@@ -18,5 +18,4 @@ spec:
       name: letsencrypt
     server: 'https://acme-v02.api.letsencrypt.org/directory'
     email: clementcohen6@gmail.com
-  selfSigned: {}
 
