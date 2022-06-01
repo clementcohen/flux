@@ -26,6 +26,6 @@ spec:
       host: 192.168.40.250
       zone: iot.cohenc.fr
       secretName: tsig-secret
-      tsigSecretAlg: HMACSHA512
+      tsigSecretAlg: hmac-sha512
       tsigKeyName: letsencrypt
 
