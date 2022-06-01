@@ -27,5 +27,5 @@ spec:
       zone: iot.cohenc.fr
       secretName: tsig-secret
       tsigSecretAlg: hmac-sha512
-      tsigKeyName: letsencrypt
+      tsigKeyname: letsencrypt
 
