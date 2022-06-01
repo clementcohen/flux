@@ -28,4 +28,5 @@ spec:
       secretName: tsig-secret
       tsigSecretAlg: hmac-sha512
       tsigKeyname: letsencrypt
+      minTTL: 300
 
