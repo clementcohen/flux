@@ -1,0 +1,25 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: mosquitto
+  namespace: domotique
+spec:
+  chart:
+    spec:
+      chart: mosquitto
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: t3n
+      version: 2.4.1
+  interval: 1h
+  values:
+    service:
+      type: LoadBalancer
+    monitoring:
+      podMonitor:
+        enabled: true
+      sidecar:
+        enabled: true
+
