@@ -17,6 +17,8 @@ spec:
   install:
     createNamespace: true
   values:
+    podSecurityContext:
+      enabled: false
     provider: rfc2136
     rfc2136:
       host: 192.168.40.250
