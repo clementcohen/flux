@@ -1,0 +1,22 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    solvers:
+      - dns01:
+          rfc2136:
+            tsigSecretSecretRef:
+              name: tsig-secret
+              key: letsencrypt
+            nameserver: 192.168.40.250
+            tsigKeyName: letsencrypt
+            tsigAlgorithm: HMACSHA512
+          cnameStrategy: Follow
+    privateKeySecretRef:
+      name: letsencrypt
+    server: 'https://acme-v02.api.letsencrypt.org/directory'
+    email: clementcohen6@gmail.com
+  selfSigned: {}
+
