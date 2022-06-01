@@ -14,10 +14,14 @@ spec:
         name: bitnami
         namespace: external-dns
       interval: 1h
+  install:
+    createNamespace: true
   values:
     provider: rfc2136
     rfc2136:
       host: 192.168.40.250
+      zone: iot.cohenc.fr
       secretName: tsig-secret
       tsigSecretAlg: HMACSHA512
       tsigKeyName: letsencrypt
+
