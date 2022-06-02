@@ -21,6 +21,13 @@ spec:
       annotations:
         external-dns.alpha.kubernetes.io/hostname: mqtt.iot.cohenc.fr
     monitoring:
+      extraVolumes:
+        - name: tls
+          secret:
+            secretName: mosquitto-tls
+      extraVolumeMounts:
+        - name: tls
+          mountPath: /certs
       podMonitor:
         enabled: true
       sidecar:
@@ -33,6 +40,7 @@ spec:
         listener 9090
         protocol websockets
         require_cert false
-        certfile /cert/tls.crt
-        keyfile /cert/tls.key
+        certfile /certs/tls.crt
+        keyfile /certs/tls.key
+    
 
