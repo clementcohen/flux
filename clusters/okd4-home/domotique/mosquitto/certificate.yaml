@@ -6,6 +6,7 @@ metadata:
 spec:
   dnsNames:
     - mosquitto.iot.cohenc.fr
+    - mqtt.iot.cohenc.fr
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
