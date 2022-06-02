@@ -25,4 +25,14 @@ spec:
         enabled: true
       sidecar:
         enabled: true
+      config: |
+        persistence true
+        persistence_location /mosquitto/data/
+        log_dest stdout
+        listener 1883
+        listener 9090
+        protocol websockets
+        require_cert false
+        certfile /cert/tls.crt
+        keyfile /cert/tls.key
 
