@@ -8,4 +8,5 @@ spec:
     - mosquitto.iot.cohenc.fr
   issuerRef:
     name: letsencrypt-prod
+    kind: ClusterIssuer
   secretName: mosquitto-tls
