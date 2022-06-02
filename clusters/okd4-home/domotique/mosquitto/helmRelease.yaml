@@ -19,7 +19,7 @@ spec:
       type: LoadBalancer
       loadBalancerIP: 192.168.40.200
       annotations:
-        external-dns.alpha.kubernetes.io/hostname: mosquitto.iot.cohenc.fr
+        external-dns.alpha.kubernetes.io/hostname: mqtt.iot.cohenc.fr
     monitoring:
       podMonitor:
         enabled: true
