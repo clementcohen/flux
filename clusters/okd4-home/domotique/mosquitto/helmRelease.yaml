@@ -22,6 +22,9 @@ spec:
         external-dns.alpha.kubernetes.io/hostname: mqtt.iot.cohenc.fr
         external-dns.alpha.kubernetes.io/ttl: "60"
     monitoring:
+      ports:
+        mqtt:
+          port: 8883
       extraVolumes:
         - name: tls
           secret:
