@@ -33,21 +33,8 @@ spec:
     extraVolumeMounts:
       - name: tls
         mountPath: /certs
-        
-    config: |
-      per_listener_settings true
-      persistence true
-      persistence_location /mosquitto/data/
-      log_dest stdout
-      port 1883
-      allow_anonymous true
+    existingConfigMap: mosquitto-conf
 
-      listener 8883
-      require_certificate false
-      allow_anonymous true
-      certfile /certs/tls.crt
-      keyfile /certs/tls.key
-      log_timestamp_format %Y-%m-%dT%H:%M:%S
     monitoring:
       podMonitor:
         enabled: true
