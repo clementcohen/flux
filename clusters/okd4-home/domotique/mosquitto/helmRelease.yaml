@@ -24,7 +24,7 @@ spec:
     monitoring:
       ports:
         mqtt:
-          port: 8883
+          port: 1883
       extraVolumes:
         - name: tls
           secret:
@@ -40,7 +40,7 @@ spec:
         persistence true
         persistence_location /mosquitto/data/
         log_dest stdout
-        listener 8883
+        listener 1883
         listener 9090
         protocol websockets
         require_cert true
