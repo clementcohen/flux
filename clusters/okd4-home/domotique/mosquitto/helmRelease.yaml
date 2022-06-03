@@ -20,6 +20,7 @@ spec:
       loadBalancerIP: 192.168.40.200
       annotations:
         external-dns.alpha.kubernetes.io/hostname: mqtt.iot.cohenc.fr
+        external-dns.alpha.kubernetes.io/ttl: "60"
     monitoring:
       extraVolumes:
         - name: tls
