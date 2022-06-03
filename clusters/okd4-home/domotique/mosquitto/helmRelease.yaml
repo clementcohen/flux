@@ -37,9 +37,9 @@ spec:
 
     monitoring:
       podMonitor:
-        enabled: true
+        enabled: false
       sidecar:
-        enabled: true
+        enabled: false
 
         
     
