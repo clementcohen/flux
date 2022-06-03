@@ -31,7 +31,7 @@ spec:
     extraVolumes:
       - name: tls
         secret:
-          secretName: mosquitto-tls
+          secretName: tls
     extraVolumeMounts:
       - name: tls
         mountPath: /certs
