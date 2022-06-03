@@ -21,37 +21,39 @@ spec:
       annotations:
         external-dns.alpha.kubernetes.io/hostname: mqtt.iot.cohenc.fr
         external-dns.alpha.kubernetes.io/ttl: "60"
+    ports:
+      mqtt:
+        port: 1883
+      mqtts:
+        port: 8883
+    extraVolumes:
+      - name: tls
+        secret:
+          secretName: mosquitto-tls
+    extraVolumeMounts:
+      - name: tls
+        mountPath: /certs
+        
+    config: |
+      per_listener_settings true
+      persistence true
+      persistence_location /mosquitto/data/
+      log_dest stdout
+      port 1883
+      allow_anonymous false
+
+      listener 8883
+      require_certificate false
+      allow_anonymous true
+      certfile /certs/tls.crt
+      keyfile /certs/tls.key
+      log_timestamp_format %Y-%m-%dT%H:%M:%S
     monitoring:
-      ports:
-        mqtt:
-          port: 1883
-      extraVolumes:
-        - name: tls
-          secret:
-            secretName: mosquitto-tls
-      extraVolumeMounts:
-        - name: tls
-          mountPath: /certs
       podMonitor:
         enabled: true
       sidecar:
         enabled: true
-      config: |
-        per_listener_settings true
-        persistence true
-        persistence_location /mosquitto/data/
-        log_dest stdout
-        listener 1883
-        listener 9090
-        log_timestamp_format %Y-%m-%dT%H:%M:%S
 
-        port 1883
-        allow_anonymous false
-      
-        listener 8883
-        require_certificate false
-        allow_anonymous true
-        certfile /certs/tls.crt
-        keyfile /certs/tls.key
+        
     
 
