@@ -40,7 +40,7 @@ spec:
       persistence_location /mosquitto/data/
       log_dest stdout
       port 1883
-      allow_anonymous false
+      allow_anonymous true
 
       listener 8883
       require_certificate false
