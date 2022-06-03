@@ -37,13 +37,20 @@ spec:
       sidecar:
         enabled: true
       config: |
+        per_listener_settings true
         persistence true
         persistence_location /mosquitto/data/
         log_dest stdout
         listener 1883
         listener 9090
-        protocol websockets
-        require_cert true
+        log_timestamp_format %Y-%m-%dT%H:%M:%S
+
+        port 1883
+        allow_anonymous false
+      
+        listener 8883
+        require_certificate false
+        allow_anonymous true
         certfile /certs/tls.crt
         keyfile /certs/tls.key
     
