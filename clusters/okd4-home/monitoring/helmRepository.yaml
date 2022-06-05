@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: harbor
+  namespace: monitoring
+spec:
+  interval: 1h
+  url: https://harbor.cohenc.fr:8443/chartrepo/docker
+  secretRef:
+    name: helm-harbor
