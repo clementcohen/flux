@@ -40,4 +40,4 @@ spec:
     configAsSecret:
       name: discord-config
     imagePullSecrets:
-      name: helm-harbor
+      - name: helm-harbor
