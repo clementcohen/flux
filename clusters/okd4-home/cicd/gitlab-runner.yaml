@@ -1,0 +1,13 @@
+apiVersion: apps.gitlab.com/v1beta2
+kind: Runner
+metadata:
+  name: gitlab-runner
+  namespace: cicd
+spec:
+  gitlabUrl: 'https://gitlab.com'
+  imagePullPolicy: IfNotPresent
+  tags: 'openshift, test'
+  token: gitlab-token
+  concurrent: 10
+  interval: 30
+  runUntagged: true
