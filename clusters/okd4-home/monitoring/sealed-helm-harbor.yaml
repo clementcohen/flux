@@ -1,0 +1,21 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    sealedsecrets.bitnami.com/namespace-wide: "true"
+  creationTimestamp: null
+  name: helm-harbor
+  namespace: cicd
+spec:
+  encryptedData:
+    password: AgB3K53c6fidVgf1cnlCg9SjqBLiSK6fYm1Z5oK3JIWIrclfj11UYNNN6ArfEn+aZXXlm6YpRyfwct8htHdBwREFu9ynkVW854X2njd4bbqS56ozaa8FMrL40TtTET+tu5/oNfbnokPsmZOm68OyFaNmdopyfMVRoUfCY3BtUNYYSMD+bnW9a6Qe6Ae0rItm0p4W57YAfEkvEqO0OhfuxrB6klFD5dak6sMfVBi8vMq2mnrybclZMX0J8hwkfKBL7zym3B//JL9FwCADHC5noYahsw6HR3BXZH7ucgwY7e8CFk3OFRifxgN8VGr7m+VczMZqbdq9wtyg0MAuzy2HRKLIvkL473ZOB0CdlhR2T1k0bVncr5Hub7EPcQ3RvJLBZWpMB9OlH7eon8tYkh5HP+IkWbdKrTzjd1Suv6j7H3XxFTkVcAMOX6UvA4kleaVHh1voZ8w9usW/YCkwhDl+HXyHedhJPZvVcx/hoQVNXv81pea/x9CSh0BbWYxd9xR23Z0Tmmt5YsqDPr2UxmQPQXhbutNchPnbyPvTznsxub/yBRN/yIoehfdlDAcUNNEd2f7magckfdoAIJqxXtgJyqAvoeZwiRT1LnUbxWPLc0yx11dma0kF9sE8Wwy0Ic1Ltrg0nRwukz2P24oFKz7Qa3rJNthNxE0NG6VUtYj55/XALfruup6eo+z3IIPmNeUkBCTS61mdx5jNjQLex8U=
+    username: AgAcq2q9yjy6tHIRCHJGJqIOtn4rQAJbGnhVtUAy/i+wThJKoh+/Zxbq+cy0uxVoIRx4chgnFNCjIq0z8p4EuRg6ejXdDUoJNVEKzJVLbeAwhvh6hUR0cChf0nUuDQ7rVaHZsC0Yb9t8OZ2kXH2qiVev1ooqzntRDwK6SI5GfPTT+iBzhMnguJDgJSucDV3x2AoIEPb1LMqv2EqfQ6HpTHSWt5UAXFW+4TAdVLKdrXpdGI9eKsCC25o3L2SHh5CUVwuytlAbmsERUpoey6P3GxDGW2cIfNxqEFjfarzkJHIjqgDNz9UVec+YCaNYPGXQQl/UELm28fWDTDYVgR8VAfJXA3wRxumRjvnaY7Y4F85yTbBZKpKzzi3ThWUqtcSQ6CiQYVb/7vY4iTkb/s6DqhhG0s0hxm2rt68svvcIJxP9onsAT0PTn8KMNHO619l0QY7AdQUSZc3pI1amt1ZphTjEKXZTXPpHWHaS46WQbJ9YCtYlL8/MyLytoKIAm4tHH8DShy3gwtJsHySTauPlWzQYywx+L97gt9LyzbePHEoWD65r+lpc3Z1QDAEHGLVG504YAcbcRANWUU/KDc92CS+s2AO9sL13cbqKmkUM85eG7GPQ4u4gnCwtmcIcDmDaK3J2RneLlMBGnyiXNptHD1Yl7HCx0tEETHXOTHRiz1x3SpTtjaZkbaP98JIQfTSQZehhS3KNcej7YA==
+  template:
+    data: null
+    metadata:
+      annotations:
+        sealedsecrets.bitnami.com/namespace-wide: "true"
+      creationTimestamp: null
+      name: helm-harbor
+      namespace: cicd
+
