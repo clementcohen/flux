@@ -5,7 +5,7 @@ metadata:
   name: harbor
   namespace: monitoring
 spec:
-  interval: 1h
+  interval: 30m
   url: https://harbor.cohenc.fr:8443/chartrepo/docker
   secretRef:
     name: helm-harbor
