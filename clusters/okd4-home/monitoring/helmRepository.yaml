@@ -2,8 +2,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: masgustavos
+  name: harbor
   namespace: monitoring
 spec:
   interval: 1h
-  url: https://masgustavos.github.io/helm
+  url: https://harbor.cohenc.fr:8443/chartrepo/docker
+  secretRef:
+    name: helm-harbor
