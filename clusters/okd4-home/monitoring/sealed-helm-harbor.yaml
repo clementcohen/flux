@@ -5,7 +5,7 @@ metadata:
     sealedsecrets.bitnami.com/namespace-wide: "true"
   creationTimestamp: null
   name: helm-harbor
-  namespace: cicd
+  namespace: monitoring
 spec:
   encryptedData:
     password: AgB3K53c6fidVgf1cnlCg9SjqBLiSK6fYm1Z5oK3JIWIrclfj11UYNNN6ArfEn+aZXXlm6YpRyfwct8htHdBwREFu9ynkVW854X2njd4bbqS56ozaa8FMrL40TtTET+tu5/oNfbnokPsmZOm68OyFaNmdopyfMVRoUfCY3BtUNYYSMD+bnW9a6Qe6Ae0rItm0p4W57YAfEkvEqO0OhfuxrB6klFD5dak6sMfVBi8vMq2mnrybclZMX0J8hwkfKBL7zym3B//JL9FwCADHC5noYahsw6HR3BXZH7ucgwY7e8CFk3OFRifxgN8VGr7m+VczMZqbdq9wtyg0MAuzy2HRKLIvkL473ZOB0CdlhR2T1k0bVncr5Hub7EPcQ3RvJLBZWpMB9OlH7eon8tYkh5HP+IkWbdKrTzjd1Suv6j7H3XxFTkVcAMOX6UvA4kleaVHh1voZ8w9usW/YCkwhDl+HXyHedhJPZvVcx/hoQVNXv81pea/x9CSh0BbWYxd9xR23Z0Tmmt5YsqDPr2UxmQPQXhbutNchPnbyPvTznsxub/yBRN/yIoehfdlDAcUNNEd2f7magckfdoAIJqxXtgJyqAvoeZwiRT1LnUbxWPLc0yx11dma0kF9sE8Wwy0Ic1Ltrg0nRwukz2P24oFKz7Qa3rJNthNxE0NG6VUtYj55/XALfruup6eo+z3IIPmNeUkBCTS61mdx5jNjQLex8U=
@@ -17,5 +17,5 @@ spec:
         sealedsecrets.bitnami.com/namespace-wide: "true"
       creationTimestamp: null
       name: helm-harbor
-      namespace: cicd
+      namespace: monitoring
 
