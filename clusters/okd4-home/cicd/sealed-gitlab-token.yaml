@@ -1,0 +1,21 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    sealedsecrets.bitnami.com/namespace-wide: "true"
+  creationTimestamp: null
+  name: gitlab-token
+  namespace: cicd
+spec:
+  encryptedData:
+    runner-registration-token: AgCbsbB3vVSjkncQslLUedXGCSUJcE5c07ol1/SmZ4mjPLT1kU8c5maz8P9/HIZfJeHctH2oXVeHZSnFE2D+4BbC6twQOv/p3AnGJZE0QxlYGC2EE4yYZOIQ7U5e/I5Pe1SIGX6/ez2TuZQna3Ia7YNzPkcdm/Q0eD47M7b8TkharsExzzJTZuXP/MzuLA6uw/PWqN7L5h6mvx/KHY2zxlJYVyh1O5kAfz5OVKaj+sCTuLsZS5DOOG1eAJyijRBK3Mv35vyxJYtdwPSJIIUUHSBubp1OE3nyvMRmVnGQPV/3xgvMdbBz9KiW2x3SWSijH/l9FcjfTX4ZkEkbfBoGx2N4dBvQb+juvNJycqMgyZJX3B3TR6MC4q2aE95yC814ik10u+CRzpb3OLBYdQm2i2IawmP7Z6gPX77fZfSg24vXoU9Hidxe3c2eSqQ20GJYllb6prCpNJaq8psvK0ji5bL1YkrKuVmBbrdHOIWqnuY4lN1pPWew0RqjRkdWhVdxc6hFzuocrWRr2jBrzIwzyYFw+zXtdtcAjbyrokqeMBZbMrJJbsHJ09e8Z2YhqZp3nHtZzTARYyReNLmDGmOFDeAOG4F8cJz6tbf/2VlEpWRVllxzNh5jGce94oqfG9YnXOAF7DDSGFJyL9N4/EWopM1uFNVdnebG0MdDZjFebZYC73m3KqJszSrlvrDN2fWo0jtlO4p9VCXNqZ9P9K7QUYTKcTnBO854xjIS/wVl2Q==
+    runner-token: AgBcFLtSail0Firm6gknJJlihkwsEhuwTc2UuvmqWjfULmTbhF2aM4+ZKtRFgARG5UCeGpgMKC2YT5Sm1WQbZFfoRlJulij7VA4FWDhqyCjJRV2xnCBFUCD4IDYV5wsVtBYRt4v82HC9YvosTYMAQeu4rgo+FegSNasT1DBlYKBswCAB2r4DrVwXHVjI/tyEhMFcQS9seCRjtAurdG4eJyGbcQepgFbKadU/Q46dNex/X8QkYsMBQ4IZpCwoN/5oL5YNoZ3SRrWK0nZpEUKmkhVEUIo3sfORuRDx0zfRC/V1r+su3FuQKP5zedNQoBEAOmb1pFe00I+L/3bk5DtAy3B62BwC/SwaXaOXbslyJVErTRa/GR0bPOn7sPmxxl94x7E1SdJkaYweMugBpneLPNuSZ0/pM+IRi9JjCmjOV9Fwgd2rtrYHiPCIJ3k3VlLF4ukuxhUs7M3ILdLKcHYVIJoJ4lmr+TNvKd4lFpotb3moo9PC//sHjT5o4ofKU3c8dW828o5w8/aKJOFjZjZxIm38GAAT3ICKN7GuNwjFQHTTHFfUKR1Jld1sI2/lumSZyNrxsESCZaVk0PBOvs19/aQlVFmXuiq/HxY35OU4rOCI0X1v2cksMQdkjDEpaya3vM6pWbKQPJCocbqym8RRyfmbkq9h6+4hFdXRKB9NHBHQAwKE4LVcF8CH4g22Iggp8TmaEc/UdqHBLHlLnw8YDXgW+PiQon0+hIY4k49SUQ==
+  template:
+    data: null
+    metadata:
+      annotations:
+        sealedsecrets.bitnami.com/namespace-wide: "true"
+      creationTimestamp: null
+      name: gitlab-token
+      namespace: cicd
+
